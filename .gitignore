@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+
+.env
+
+*.log
+
+.vscode/
+.idea/
+
+data/bank_loan_cleaned.csv
