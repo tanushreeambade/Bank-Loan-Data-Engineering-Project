@@ -1,7 +1,24 @@
+from sqlalchemy import create_engine
+from sqlalchemy.engine import URL
+
 def load_data(df):
 
-    print("\n========== LOAD ==========")
+    url = URL.create(
+        drivername="postgresql+psycopg2",
+        username="postgres",
+        password="@*tanushree06*",
+        host="localhost",
+        port=5432,
+        database="bank_loan_db"
+    )
 
-    df.to_csv("data/bank_loan_cleaned.csv", index=False)
+    engine = create_engine(url)
 
-    print("Clean dataset saved successfully!")
+    df.to_sql(
+        "bank_loan_data",
+        con=engine,
+        if_exists="replace",
+        index=False
+    )
+
+    print("\nData Loaded Successfully into PostgreSQL!")
