@@ -166,11 +166,9 @@ The dashboard provides interactive visualizations including:
 
 ## 📷 Dashboard Preview
 
-> Add your dashboard screenshot below after uploading it to the `screenshots` folder.
+The following dashboard was developed in Power BI to analyze bank loan applications, approvals, income categories, and customer demographics.
 
-```
-screenshots/dashboard.png
-```
+![Bank Loan Dashboard](screenshots/dashboard.png)
 
 ---
 
